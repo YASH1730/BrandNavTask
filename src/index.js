@@ -4,10 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Redux setup 
+import {Provider} from 'react-redux' // this will populate the state under the application's components 
+import { PersistGate } from 'redux-persist/integration/react' // for persisting data
+
+import {store, persistor} from './Redux/store'
+
+// subscribe this function is used for making the connection between app and extension
+store.subscribe(() => console.log(store.getState()));
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  <Provider store = {store}>
+  <PersistGate loading = {null} persistor = {persistor}>
     <App />
+  </PersistGate>
+  </Provider>
   </React.StrictMode>
 );
 

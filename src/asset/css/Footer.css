@@ -1,0 +1,141 @@
+.containerFooter {
+    display: grid;
+    padding: 5%;
+    row-gap: 100px;
+}
+
+.containerFooter div {
+    /* border: 1px solid black; */
+    /* padding: 1%; */
+    align-items: center;
+}
+
+.subscribe {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 3% 2% 4% 2%;
+    box-shadow: 0px 6px 20px 15px #a1a1a121;
+}
+
+.subscribe div span {
+    padding: 2%;
+    font-size: 2rem;
+}
+
+.subscribe div p {
+    color: #4F5665;
+    padding: 1% 2% 1% 2%;
+    margin: 0%;
+    font-size: 0.9rem;
+}
+
+.subscribe button {
+    margin: auto;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: #F53838;
+    padding: 7% 15% 7% 15%;
+    box-shadow: 0px 20px 20px 8px #ff000026;
+}
+
+.lastPanel {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastPanel div {
+    /* border: 2px solid black; */
+    padding: 6% 1% 0% 1%;
+}
+
+.lastPanel div img {
+    display: block;
+    width: 40%;
+}
+
+.lastPanel div p {
+    font-size: 0.8rem;
+    color: #4F5665;
+    padding: 7% 1% 0% 1%;
+    width: 60%;
+    margin: 0%;
+}
+
+.socialIcons {
+    display: flex;
+    column-gap: 10px;
+}
+
+.socialIcons img {
+    width: 35px !important;
+    box-shadow: 0px 20px 20px 0px #61616145;
+    border: none;
+    border-radius: 100%;
+}
+
+.lastPanel div ul {
+    color: #4F5665;
+    list-style: none;
+    padding: 0%;
+}
+
+.lastPanel ul li {
+    padding-bottom: 5%;
+}
+
+.footerItem {
+    height: 250px;
+}
+
+
+/* media */
+
+@media screen and (max-width: 800px) {
+    .subscribe {
+        grid-template-columns: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+    .subscribe button {
+        padding: 2%;
+    }
+    .subscribe div p {
+        font-size: 1rem;
+    }
+    .lastPanel div img {
+        display: block;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .lastPanel {
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .lastPanel div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .socialIcons {
+        display: flex;
+        flex-direction: column !important;
+        row-gap: 20px;
+        text-align: center;
+    }
+    .footerItem {
+        height: auto;
+    }
+}

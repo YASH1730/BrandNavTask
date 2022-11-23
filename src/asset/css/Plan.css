@@ -1,0 +1,148 @@
+.containerPlan {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading {
+    padding: 3%;
+    text-align: center;
+}
+
+#heading span {
+    font-size: 2.5rem;
+}
+
+#heading p {
+    color: #4F5665;
+    font-size: 0.6;
+    padding: 1%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    column-gap: 80px;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30% 5% 15% 5%;
+    border-radius: 20px;
+    border: 1px solid rgba(58, 58, 58, 0.089);
+}
+
+.card div:hover {
+    border: 1px solid #F53838;
+}
+
+.card div img {
+    width: 40%;
+}
+
+.card div strong {
+    padding-top: 7%;
+}
+
+.card ul {
+    font-size: 0.85rem;
+    padding: 10% 0% 30% 0%;
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.card ul li {
+    margin: 0;
+    padding: 10px 0px 10px 30px;
+    color: #4F5665;
+    list-style: none;
+    background-image: url("../images/tick.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px;
+}
+
+.card span {
+    font-size: 2rem;
+    font-weight: 500 !important;
+    padding: 4%;
+}
+
+.card button {
+    border: 1px solid #F53838 !important;
+    border-radius: 50px;
+    color: #F53838;
+    background-color: white;
+    padding: 3% 10% 3% 10%;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: all 300ms;
+}
+
+.card button:hover {
+    color: white;
+    background-color: #F53838;
+    box-shadow: 0px 25px 50px 3px #f5383852;
+}
+
+.card span b {
+    color: #4F5665;
+    font-weight: 400;
+}
+
+
+/* media  */
+
+@media screen and (max-width: 700px) {
+    .card {
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #heading span {
+        font-size: 1.9rem;
+    }
+    #heading p {
+        font-size: 0.8rem;
+    }
+    .card {
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
+    .card div {
+        width: 80%;
+        margin: auto;
+        padding: 10% 0% 15% 0%;
+    }
+    .card div img {
+        width: 50%;
+    }
+    .card ul {
+        font-size: 1.2rem;
+        max-height: 250px;
+    }
+    .card div strong {
+        padding-top: 10%;
+        font-size: 1.3rem;
+    }
+    .card ul li {
+        padding: 10px 0px 10px 35px;
+        background-size: 20px;
+    }
+    .card span {
+        font-size: 2rem;
+    }
+    .card button {
+        border: 2px solid #F53838 !important;
+        font-size: 1.1rem;
+    }
+}

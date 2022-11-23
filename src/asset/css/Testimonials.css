@@ -1,0 +1,139 @@
+.containerTestimonials {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: block;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    transition: all 500ms;
+}
+
+.box {
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: 40% auto;
+    padding: 2%;
+    min-height: 170px;
+    max-height: 170px;
+    min-width: 300px;
+    border: 1px solid rgba(119, 119, 119, 0.274);
+    justify-content: center;
+    border-radius: 20px;
+    transition: all 500ms;
+}
+
+.box:hover {
+    border: 1px solid #F53838;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro img {
+    width: 70%;
+    padding: 2%;
+}
+
+.intro div>span {
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+}
+
+.intro div>p {
+    font-size: 0.8rem !important;
+    margin: 0%;
+    color: #4F5665;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2px;
+}
+
+.content p {
+    font-size: 0.85rem;
+    padding: 1%;
+}
+
+.controller {
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.controller div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.controller div button {
+    display: flex;
+    background-color: white;
+    color: #F53838;
+    border-radius: 100%;
+    font-weight: bolder;
+    border: none;
+    padding: 0.5% !important;
+    border: 2px solid #F53838;
+    transition: all 300ms;
+}
+
+.controller h1 {
+    font-size: 2.5rem;
+    margin: 0%;
+    position: relative;
+    transform: translate(0%, -10%);
+    display: flex
+}
+
+.controller button:hover {
+    background-color: #F53838;
+    color: white;
+}
+
+.controller ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+    font-size: 2rem;
+}
+
+
+/* media */
+
+@media screen and (max-width: 600px) {
+    .slider-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 5%;
+    }
+    .controller {
+        display: none;
+    }
+}

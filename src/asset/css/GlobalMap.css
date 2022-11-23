@@ -1,0 +1,23 @@
+.containerMap {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    margin-top: 5%;
+}
+
+#map img {
+    width: 100%;
+}
+
+#companySection {
+    padding: 1%;
+}
+
+#companySection img {
+    width: 100%;
+}

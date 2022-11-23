@@ -1,0 +1,172 @@
+.containerBanner {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2%;
+}
+
+.containerBanner div {
+    /* border: 2px solid black; */
+}
+
+#bannerText {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+#bannerText span {
+    font-size: 3.1rem;
+}
+
+#bannerText p {
+    padding: 1%;
+    font-size: 0.9rem;
+    color: #4F5665;
+}
+
+#bannerText button {
+    width: 35%;
+    padding: 3%;
+    background-color: #F53838;
+    color: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0px 30px 50px 3px #ff808073;
+    cursor: pointer;
+}
+
+#item2 img {
+    width: 100%;
+}
+
+.containerStatistics {
+    padding: 5%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 200px 400px 0px #0d10251a;
+}
+
+.containerStatistics div {
+    /* border: 2px solid black; */
+    padding: 5%;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerStatistics div img {
+    width: 50px;
+}
+
+.containerStatistics div p {
+    margin: 1%;
+}
+
+#location {
+    border-left: 1px solid #EEEFF2;
+    border-right: 1px solid #EEEFF2;
+}
+
+
+/* // media query */
+
+@media screen and (max-width: 1000px) {
+    #bannerText span {
+        font-size: 2.9rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #bannerText span {
+        font-size: 2.6rem;
+    }
+    #bannerText p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #bannerText span {
+        font-size: 2.4rem;
+    }
+    #bannerText button {
+        box-shadow: 0px 20px 40px 3px #ff808073;
+    }
+    #bannerText p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    #bannerText span {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #bannerText span {
+        font-size: 1.8rem;
+    }
+    #bannerText p {
+        font-size: 0.7rem;
+    }
+    #bannerText button {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #bannerText span {
+        font-size: 1.8rem;
+    }
+    #bannerText p {
+        display: none;
+    }
+    #bannerText button {
+        margin-top: 4%;
+    }
+    .containerStatistics {
+        padding: 3%;
+        margin: 3%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #item2 {
+        display: none;
+    }
+    .containerBanner {
+        grid-template-columns: 100%;
+        padding: 0%;
+    }
+    #bannerText {
+        text-align: center;
+        background-color: #c7666615;
+        margin: 0%;
+    }
+    #bannerText p {
+        display: block;
+        font-size: 0.8rem;
+    }
+    #bannerText button {
+        margin: auto;
+        width: 35%;
+        box-shadow: none;
+    }
+    .containerStatistics {
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerStatistics div {
+        flex-direction: column;
+        text-align: center;
+    }
+}
