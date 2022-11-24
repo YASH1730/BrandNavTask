@@ -74,7 +74,7 @@
 
 .socialIcons img {
     width: 35px !important;
-    box-shadow: 0px 20px 20px 0px #61616145;
+    box-shadow: 0px 10px 20px 0px #61616145;
     border: none;
     border-radius: 100%;
 }
@@ -137,5 +137,8 @@
     }
     .footerItem {
         height: auto;
+    }
+    .subscribe button {
+        box-shadow: 0px 4px 20px 8px #ff000026;
     }
 }

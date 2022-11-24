@@ -133,6 +133,17 @@
         overflow-y: hidden;
         padding: 5%;
     }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .slider-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .slider-wrapper {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
     .controller {
         display: none;
     }
